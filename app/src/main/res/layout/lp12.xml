@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ImageButton
+        android:id="@+id/zwölfterton"
+        android:layout_margin="16dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sound"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:translationZ="90dp">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/weiterzwölf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/nextbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:translationZ="90dp">
+
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/zurückzwölf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/weiterzwölf"
+        android:layout_margin="8dp"
+        android:translationZ="90dp">
+    </ImageButton>
+    <ImageView
+        android:id="@+id/limos"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/limos"
+        ></ImageView>
+    <ImageView
+        android:layout_below="@+id/limos"
+        android:id="@+id/limus"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/limus"></ImageView>
+
+    <ImageView
+        android:id="@+id/blind2"
+        android:layout_below="@id/blind1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blindpic"></ImageView>
+
+    <ImageView
+        android:id="@+id/blind1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blindpic"></ImageView>
+</RelativeLayout>

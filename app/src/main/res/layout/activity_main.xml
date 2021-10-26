@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ueberschrift"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/buttonholder1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:weightSum="2">
+
+        <Button
+            android:onClick="FlächeninhalteunterFunktionsgraphen"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Bestimmung von Flächeninhalten unter Funktionsgraphen"
+            android:background="@drawable/mybutton">
+        </Button>
+        <Button
+            android:onClick="UmkehrundderDifferentiation"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Integration als Umkehrung der Differentiation"
+            android:background="@drawable/mybutton">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonholder2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:weightSum="2"
+        >
+        <Button
+            android:onClick="Kombinationintegrationableitung"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Ableitung und Integration kombiniert"
+            android:background="@drawable/mybutton">
+        </Button>
+        <Button
+            android:onClick="RekonstruktionausÄnderungsraten"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Rekonstruktion aus Beständen und Änderungsraten"
+            android:background="@drawable/mybutton">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/starttext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="4"
+        android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/erstesscrollview"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:scrollbars="vertical"
+        android:background="@color/white">
+    <TextView
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:id="@+id/ErsterText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Herzlich willkommen!\nDiese Anwendung soll dir helfen die Grundlagen der Integralrechnung besser zu verstehen. \nEs gibt verschiedene Sichtweisen auf das Integral und seine Verwendungsmöglichkeiten. Im nächsten Schritt kannst du aus vier verschiedenen Herangehensweisen auswählen und wirst dann Schritt für Schritt durch den jeweiligen Lernpfad geführt. \nIn den meisten Schritten wird eine Erklärung mittels Audio gegeben, in diesem Fall musst du zuerst auf das Audiosymbol klicken um weiter zu kommen. Achte also darauf dass dein Ton eingeschaltet ist!"
+        android:textSize="30dp"
+        >
+    </TextView>
+
+    </ScrollView>
+        <Button
+            android:textSize="25sp"
+            android:text="Alles klar !"
+            android:layout_width="500dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="Ersteklick"
+            android:background="@drawable/mybutton"></Button>
+</LinearLayout>
+
+</LinearLayout>

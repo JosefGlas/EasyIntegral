@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/animationstest">
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/zurücksechs"
+        android:id="@+id/formel"
+        android:scaleType="centerInside"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trapezn4">
+    </ImageView>
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_toLeftOf="@+id/sechsterton"
+            android:animateLayoutChanges="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/trapezformel"
+            android:scaleType="centerInside"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/formeln4">
+        </ImageView>
+    <ImageView
+        android:id="@+id/trapezrechnung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rechnungtrapez"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_below="@id/trapezformel"
+        android:layout_marginTop="75dp">
+    </ImageView>
+
+
+
+
+    <ImageButton
+        android:id="@+id/sechsterton"
+        android:layout_margin="16dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sound"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/zurücksechs"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/weitersechs"
+        android:layout_margin="8dp">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/weitersechs"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/nextbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp">
+    </ImageButton>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/krummlseeBild"
+        android:layout_toLeftOf="@id/zurückdrei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/krummlsee"
+        android:scaleType="fitXY"></ImageView>
+
+    <ImageButton
+        android:id="@+id/dritterton"
+        android:layout_margin="16dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sound"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+    </ImageButton>
+
+    <ImageButton
+
+        android:id="@+id/weiterdrei"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/nextbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/zurückdrei"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/weiterdrei"
+        android:layout_margin="8dp">
+    </ImageButton>
+
+</RelativeLayout>

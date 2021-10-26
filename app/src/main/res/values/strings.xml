@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EasyIntegral</string>
+    <string name="Oberuntersumme"> <u>Ober- und Untersummen</u></string>
+    <string name="def"> <u>Definition:</u></string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+    <ImageButton
+        android:id="@+id/elfterton"
+        android:layout_margin="16dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sound"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:translationZ="90dp">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/zurückelf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/weiterelf"
+        android:layout_margin="8dp"
+        android:translationZ="90dp">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/weiterelf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/nextbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:translationZ="90dp">
+
+    </ImageButton>
+    <ImageView
+        android:layout_margin="16dp"
+        android:scaleType="centerInside"
+        android:layout_toLeftOf="@+id/zurückelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/n100"
+        android:id="@+id/UOS100"></ImageView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tabelleuos"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/tabelleuos"
+        android:layout_marginLeft="75dp"></ImageView>
+
+
+</RelativeLayout>

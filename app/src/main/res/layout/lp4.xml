@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_toLeftOf="@+id/zurückvier"
+        android:src="@drawable/seeschematisch"></ImageView>
+    <ImageView
+        android:id="@+id/formel5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fvonx"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp">
+    </ImageView>
+    <ImageButton
+        android:id="@+id/vierterton"
+        android:layout_margin="16dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sound"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/zurückvier"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/weitervier"
+        android:layout_margin="8dp">
+    </ImageButton>
+    <ImageButton
+
+        android:id="@+id/weitervier"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/nextbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp">
+    </ImageButton>
+</RelativeLayout>

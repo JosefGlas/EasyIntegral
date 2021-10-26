@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parent00"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/fragelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="Überlege kurz, welche bekannten Figuren du mitsamt der Formeln zur Berechnung ihrer jeweiligen Flächeninhalte noch kennst.">
+    </TextView>
+    <TextView
+        android:id="@+id/antwortlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="Folgende Figuren könnten dir eingefallen sein:">
+    </TextView>
+    <ImageView
+        android:id="@+id/geofiguren"
+        android:layout_below="@id/antwortlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/geofig"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/back2"
+        ></ImageView>
+    <ImageButton
+        android:onClick="next2"
+        android:id="@+id/next2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/nextbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/back2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@+id/next2"
+        android:background="@drawable/backbutton"
+        android:onClick="zurück2"></ImageButton>
+
+
+
+</RelativeLayout>
